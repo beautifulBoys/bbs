@@ -1,24 +1,16 @@
 require('normalize.css/normalize.css');
-require('styles/App.css');
-require('styles/header.less');
+require('./header.less');
 
 import React from 'react';
-import { Row, Col } from 'antd';
 
-class Header extends React.Component {
+export default class Header extends React.Component {
   render() {
     return (
-      <div className="header">
-        <Row gutter={16} >
-          <Col span={4} >乐视</Col>
-          <Col span={4} >的</Col>
-          <Col span={4} >的</Col>
-          <Col span={4} >的</Col>
-          <Col span={4} >地方</Col>
-          <Col span={4} >大幅度</Col>
-        </Row>
+      <div className="header-box">
+        <div className="header">
+          <div className="head-main">乐视</div>
+        </div>
       </div>
     );
   }
 }
-export default Header;
