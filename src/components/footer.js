@@ -21,11 +21,7 @@ export default class Footer extends React.Component {
           <p>
             {
               links.map((item) => {
-                if (links.length - 1 !== item.id) {
-                  return <div key={item.id}><a href={item.link}>{item.text}</a><span> -</span> </div>
-                } else {
-                  return <div key={item.id}><a href={item.link}>{item.text}</a></div>
-                }
+                  return <span key={item.id}><a href={item.link}>{item.text}</a></span>;
               })
             }
           </p>
