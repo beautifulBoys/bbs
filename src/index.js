@@ -1,7 +1,22 @@
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './views/main';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PageDetail from './views/page_detail';
+import Main from './views/main';
+import Header from './components/header';
+import Footer from './components/footer';
 
 // Render the main component into the dom
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render((
+  <Router>
+    <div>
+      <Header/>
+      <Switch>
+        <Route path="/main" component={Main}/>
+        <Route path="/" component={PageDetail}/>
+      </Switch>
+      <Footer/>
+    </div>
+  </Router>
+), document.getElementById('app'));

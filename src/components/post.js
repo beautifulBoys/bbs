@@ -38,17 +38,31 @@ export default class Post extends React.Component {
           <p><span className="follow">关 注</span></p>
         </div>
         <div className="right">
-          <p><span className="post-step">4 楼</span><span className="post-step-right">电梯直达</span></p>
-          <div className="content">
-            <pre>{info.post.content}</pre>
+          <div className="top">
+            <div className="content">
+              <h6><span className="post-step">4 楼</span><span className="post-step-right">电梯直达</span></h6>
+              <pre>{info.post.content}</pre>
+            </div>
             <div className="signature">
               <h6>签名档</h6>
               <pre>{info.post.sign}</pre>
             </div>
-            <div className="foot">
-
+          </div>
+          <div className="bottom">
+            <div className="bottom-left">
+              <ul>
+                <li><a href="#"><img src="../images/bottom-edit.png"/><span>回帖</span></a></li>
+                <li><a href="#"><img src="../images/bottom-talk.png"/><span>回信</span></a></li>
+                <li><a href="#"><img src="../images/bottom-share.png"/><span>转载</span></a></li>
+                <li><a href="#"><img src="../images/bottom-post.png"/><span>转寄</span></a></li>
+                <li><a href="#"><img src="../images/bottom-collect.png"/><span>收入文集</span></a></li>
+              </ul>
+            </div>
+            <div className="bottom-right">
+              查看回复(5)
             </div>
           </div>
+
 
         </div>
       </div>

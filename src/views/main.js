@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../components/header.js';
 import Footer from '../components/footer.js';
 import Post from '../components/post.js';
+import Reply from '../components/reply.js';
 
 import { Breadcrumb, Pagination } from 'antd';
 
@@ -15,7 +16,6 @@ export default class AppComponent extends React.Component {
     }
     return (
       <div className="main-body">
-        <Header/>
         <div className="main-content">
 
           <div className="bread">
@@ -46,12 +46,11 @@ export default class AppComponent extends React.Component {
             <Post />
 
           </div>
+          <Reply/>
 
 
 
         </div>
-
-        <Footer/>
       </div>
     );
   }
