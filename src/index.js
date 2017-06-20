@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PageDetail from './views/page_detail';
 import Main from './views/main';
+import Menu from './views/page_menu';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -14,6 +15,7 @@ ReactDOM.render((
       <Header/>
       <Switch>
         <Route path="/main" component={Main}/>
+        <Route path="/menu" component={Menu}/>
         <Route path="/" component={PageDetail}/>
       </Switch>
       <Footer/>

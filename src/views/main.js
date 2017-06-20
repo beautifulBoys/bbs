@@ -2,8 +2,6 @@ require('normalize.css/normalize.css');
 require('./main.less');
 
 import React from 'react';
-import Header from '../components/header.js';
-import Footer from '../components/footer.js';
 import Post from '../components/post.js';
 import Reply from '../components/reply.js';
 

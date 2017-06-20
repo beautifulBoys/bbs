@@ -2,9 +2,6 @@ require('normalize.css/normalize.css');
 require('./page_detail.less');
 
 import React from 'react';
-import Header from '../components/header.js';
-import Footer from '../components/footer.js';
-// import Post from '../components/post.js';
 
 import { Breadcrumb, Pagination, Table } from 'antd';
 
@@ -37,7 +34,6 @@ export default class AppComponent extends React.Component {
     return (
       <div className="page-detail-body">
         <div className="main-content">
-
           <div className="bread">
             <Breadcrumb separator=">>">
             {
@@ -53,7 +49,6 @@ export default class AppComponent extends React.Component {
           </div>
 
           <div className="content-header">
-
             <div className="title-box">
               CanteenDorm 燕园食宿
               <span className="share">★☆收藏本版（485）</span>
@@ -64,17 +59,10 @@ export default class AppComponent extends React.Component {
               <p>版务: <a href="#">qianyu</a></p>
             </div>
 
-
-            <Table dataSource={dataSource} columns={columns} className="table"/>
-
+            <Table dataSource={dataSource} columns={columns} pagination={false} className="table"/>
             <Pagination showQuickJumper defaultCurrent={2} total={50} onChange={paginationEvent} className="pagination-box"/>
-
           </div>
-
-
-
         </div>
-
       </div>
     );
   }
