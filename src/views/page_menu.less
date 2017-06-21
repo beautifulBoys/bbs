@@ -9,6 +9,13 @@ body, html {
   font-size: 13px;
 }
 
+@red: #e97c62;
+@blue: #8db1b6;
+@green: #5cae97;
+@yellow: #f7a95e;
+
+@textColor: #e97c62;
+
 .page-menu-body {
   width: 100%;
   height: 100%;
@@ -23,18 +30,109 @@ body, html {
     .content-header {
       width: 100%;
       height: 1000px;
-      background: red;
       ul {
-
         padding: 0;
         margin: 0 -8px;
-        li {
+        font-size: 0;
+        li.li {
           width: 542px;
-          height: 100px;
-          background: blue;
+          background: #fff;
           display: inline-block;
           margin: 0 8px 16px 8px;
+          font-size: 14px;
+          cursor: pointer;
+          border: 1px solid #fff;
+          &:hover {
+            background: #eee;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.03);
+          }
+          &.red {
+            border-top: 4px solid @red;
+            .sign {
+              background: @red;
+            }
+          }
+          &.green {
+            border-top: 4px solid @green;
+            .sign {
+              background: @green;
+            }
+          }
+          &.yellow {
+            border-top: 4px solid @yellow;
+            .sign {
+              background: @yellow;
+            }
+          }
+          &.blue {
+            border-top: 4px solid @blue;
+            .sign {
+              background: @blue;
+            }
+          }
 
+          .left {
+            width: 100%;
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            .title {
+              font-size: 16px;
+              font-weight: bold;
+              .sign {
+                padding: 1px 5px;
+                border-radius: 3px;
+                color: #fff;
+                margin-right: 15px;
+              }
+              .forward {
+                float: right;
+                font-size: 20px;
+                line-height: 24px;
+                color: #888;
+              }
+            }
+            .explain {
+              line-height: 15px;
+              font-size: 13px;
+              color: #888;
+              margin-top: 8px;
+              a {
+                color: @textColor;
+                margin: 0 3px;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          .right {
+            width: 100%;
+            padding: 15px 15px;
+            display: flex;
+            .left1 {
+              width: 70px;
+            }
+            .right1 {
+              flex: 1;
+              ol {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                li.ol-li {
+                  display: inline;
+                  margin: 0 5px;
+                  background: transparent;
+                  a {
+                    color: @textColor;
+                    line-height: 22px;
+                    &:hover {
+                      text-decoration: underline;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
 
