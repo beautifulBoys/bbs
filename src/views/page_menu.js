@@ -12,7 +12,7 @@ export default class PageMenu extends React.Component {
 
     return (
       <div className="page-menu-body">
-        <div className="main-content">
+        <div className="main-content-box">
           <div className="bread">
             <Breadcrumb separator=">>">
             {
@@ -27,39 +27,55 @@ export default class PageMenu extends React.Component {
             </Breadcrumb>
           </div>
 
-          <div className="content-header">
+          <div className="content-body">
             <ul>
-            {
-              plate.map((item, index) => {
-                return (
-                  <li className={'li ' + item.css} key={index}>
-                    <div className="left">
-                      <div className="title"><span className="sign">{item.plate.plateIndex}</span>{item.plate.name}<span className="forward">></span></div>
-                      <div className="explain">区务：
-                      {
-                        item.plate.admin.map((item1, index1) => {
-                          return <a href="#" key={index1}>{item1.name}</a>
-                        })
-                      }
+              {
+                plate.map((item, index) => {
+                  return (
+                    <li className={'li ' + item.css} key={index}>
+                      <div className="left">
+                        <div className="title"><span className="sign">{item.plate.plateIndex}</span>{item.plate.name}<span className="forward">></span></div>
+                        <div className="explain">区务：
+                          {
+                            item.plate.admin.map((item1, index1) => {
+                              return <a href="#" key={index1}>{item1.name}</a>
+                            })
+                          }
+                        </div>
                       </div>
-                    </div>
-                    <div className="right">
-                      <div className="left1">热门版面：</div>
-                      <div className="right1">
-                        <ol>
-                        {
-                          item.hotPlate.map((item2, index2) => {
-                            return <li className="ol-li" key={index2}><a href="#">[{item2.name}]</a></li>
-                          })
-                        }
-                        </ol>
+                      <div className="right">
+                        <div className="left1">热门版面：</div>
+                        <div className="right1">
+                          <ol>
+                            {
+                              item.hotPlate.map((item2, index2) => {
+                                return <li className="ol-li" key={index2}><a href="#">[{item2.name}]</a></li>
+                              })
+                            }
+                          </ol>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                )
-              })
-            }
+                    </li>
+                  )
+                })
+              }
             </ul>
+
+            <div className="default-plate-box">
+              <div className="style1">
+                <div className="header">默认版面
+                  <div className="box"><span className="square active">区块</span><span className="list">列表</span></div>
+                </div>
+                <div>
+                  <div className="square-title">政治理论类社团<span>▼</span><span>▲</span></div>
+                  <ul>
+                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
+                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
+                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
