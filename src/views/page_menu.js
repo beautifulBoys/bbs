@@ -3,11 +3,13 @@ require('./page_menu.less');
 
 import React from 'react';
 import { Breadcrumb } from 'antd';
+import { plate } from '../data/plate.json';
 
 export default class PageMenu extends React.Component {
 
   render() {
     var a = [{id: 1, name: '中国矿业大学', link: '#'}, {id: 2, name: '新能源工程学院'}, {id: 3, name: '信呢各院', link: '#'}, {id: 4, name: '版面列表'}];
+
     return (
       <div className="page-menu-body">
         <div className="main-content">
@@ -27,27 +29,36 @@ export default class PageMenu extends React.Component {
 
           <div className="content-header">
             <ul>
-              <li className="li red">
-                <div className="left">
-                  <div className="title"><span className="sign">六区</span>休闲娱乐<span className="forward">></span></div>
-                  <div className="explain">区务：<a href="#">Draved</a> <a href="#">Draved</a> <a href="#">Draved</a></div>
-                </div>
-                <div className="right">
-                  <div className="left1">热门版面：</div>
-                  <div className="right1">
-                    <ol>
-                      <li className="ol-li"><a href="#">[别问我是谁]</a></li>
-                      <li className="ol-li"><a href="#">[鹊桥]</a></li>
-                      <li className="ol-li"><a href="#">[未名湖]</a></li>
-                      <li className="ol-li"><a href="#">[且歌且行]</a></li>
-                      <li className="ol-li"><a href="#">[男孩子]</a></li>
-                      <li className="ol-li"><a href="#">[谈情说爱]</a></li>
-                      <li className="ol-li"><a href="#">[鹊桥征玩友]</a></li>
-                      <li className="ol-li"><a href="#">[日记]</a></li>
-                     </ol>
-                   </div>
-                </div>
-              </li>
+            {
+              plate.map((item, index) => {
+                return (
+                  <li className={'li ' + item.css} key={index}>
+                    <div className="left">
+                      <div className="title"><span className="sign">{item.plate.plateIndex}</span>{item.plate.name}<span className="forward">></span></div>
+                      <div className="explain">区务：
+                      {
+                        item.plate.admin.map((item1, index1) => {
+                          return <a href="#" key={index1}>{item1.name}</a>
+                        })
+                      }
+                      </div>
+                    </div>
+                    <div className="right">
+                      <div className="left1">热门版面：</div>
+                      <div className="right1">
+                        <ol>
+                        {
+                          item.hotPlate.map((item2, index2) => {
+                            return <li className="ol-li" key={index2}><a href="#">[{item2.name}]</a></li>
+                          })
+                        }
+                        </ol>
+                      </div>
+                    </div>
+                  </li>
+                )
+              })
+            }
             </ul>
           </div>
         </div>

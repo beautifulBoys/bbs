@@ -1,0 +1,136 @@
+{
+  "plate": [
+    {
+      "css": "red",
+      "plate": {
+        "plateIndex": "一区",
+        "name": "北京大学",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    },
+    {
+      "css": "green",
+      "plate": {
+        "plateIndex": "二区",
+        "name": "乡情校谊",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    },
+    {
+      "css": "blue",
+      "plate": {
+        "plateIndex": "三区",
+        "name": "学术研讨",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    },
+    {
+      "css": "yellow",
+      "plate": {
+        "plateIndex": "四区",
+        "name": "电脑网络",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    },
+    {
+      "css": "red",
+      "plate": {
+        "plateIndex": "五区",
+        "name": "人文艺术",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    },
+    {
+      "css": "red",
+      "plate": {
+        "plateIndex": "六区",
+        "name": "休闲娱乐",
+        "admin": [
+          {"id": 1, "name": "Draved"},
+          {"id": 2, "name": "Tom"},
+          {"id": 3, "name": "Jack"}
+        ]
+      },
+      "hotPlate": [
+        {"id": 1, "name": "别问我是谁"},
+        {"id": 2, "name": "鹊桥"},
+        {"id": 3, "name": "未名湖"},
+        {"id": 4, "name": "且歌且行"},
+        {"id": 5, "name": "男孩子"},
+        {"id": 6, "name": "谈情说爱"},
+        {"id": 7, "name": "鹊桥征玩友"},
+        {"id": 8, "name": "日记"}
+      ]
+    }
+  ]
+}
