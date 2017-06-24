@@ -1,25 +1,72 @@
 {
-  "plate": [
+  "brand": [
     {
+      "id": 1,
+      "name": "中国矿业大学",
+      "link": "#"
+    }, {
+      "id": 2,
+      "name": "新能源工程学院"
+    }, {
+      "id": 3,
+      "name": "信呢各院",
+      "link": "#"
+    }, {
+      "id": 4,
+      "name": "版面列表"
+    }
+  ],
+  "plate": [{
       "css": "red",
       "plate": {
         "plateIndex": "一区",
         "name": "北京大学",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
       ]
     },
     {
@@ -27,21 +74,52 @@
       "plate": {
         "plateIndex": "二区",
         "name": "乡情校谊",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
       ]
     },
     {
@@ -49,21 +127,52 @@
       "plate": {
         "plateIndex": "三区",
         "name": "学术研讨",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
       ]
     },
     {
@@ -71,21 +180,52 @@
       "plate": {
         "plateIndex": "四区",
         "name": "电脑网络",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
       ]
     },
     {
@@ -93,21 +233,52 @@
       "plate": {
         "plateIndex": "五区",
         "name": "人文艺术",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
       ]
     },
     {
@@ -115,21 +286,273 @@
       "plate": {
         "plateIndex": "六区",
         "name": "休闲娱乐",
-        "admin": [
-          {"id": 1, "name": "Draved"},
-          {"id": 2, "name": "Tom"},
-          {"id": 3, "name": "Jack"}
+        "admin": [{
+            "id": 1,
+            "name": "Draved"
+          },
+          {
+            "id": 2,
+            "name": "Tom"
+          },
+          {
+            "id": 3,
+            "name": "Jack"
+          }
         ]
       },
-      "hotPlate": [
-        {"id": 1, "name": "别问我是谁"},
-        {"id": 2, "name": "鹊桥"},
-        {"id": 3, "name": "未名湖"},
-        {"id": 4, "name": "且歌且行"},
-        {"id": 5, "name": "男孩子"},
-        {"id": 6, "name": "谈情说爱"},
-        {"id": 7, "name": "鹊桥征玩友"},
-        {"id": 8, "name": "日记"}
+      "hotPlate": [{
+          "id": 1,
+          "name": "别问我是谁"
+        },
+        {
+          "id": 2,
+          "name": "鹊桥"
+        },
+        {
+          "id": 3,
+          "name": "未名湖"
+        },
+        {
+          "id": 4,
+          "name": "且歌且行"
+        },
+        {
+          "id": 5,
+          "name": "男孩子"
+        },
+        {
+          "id": 6,
+          "name": "谈情说爱"
+        },
+        {
+          "id": 7,
+          "name": "鹊桥征玩友"
+        },
+        {
+          "id": 8,
+          "name": "日记"
+        }
+      ]
+    }
+  ],
+  "plateSecond": [{
+      "id": 1,
+      "text": "政治理论类社团",
+      "list": [{
+          "isCollect": false,
+          "secondId": 1,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助1",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 2,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助2",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 3,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助3",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 4,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助4",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 5,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助5",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 6,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助6",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 7,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助7",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 8,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助8",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "影视艺术社团",
+      "list": [{
+          "isCollect": false,
+          "secondId": 1,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        },
+        {
+          "isCollect": false,
+          "secondId": 2,
+          "english": "BBShelp",
+          "chinese": "BBS使用求助",
+          "count": 12,
+          "admin": [{
+              "id": 1,
+              "name": "leimiaos"
+            },
+            {
+              "id": 2,
+              "name": "alwaysmoving"
+            },
+            {
+              "id": 3,
+              "name": "lOOO"
+            }
+          ],
+          "lastUpdate": "2016-02-12"
+        }
       ]
     }
   ]

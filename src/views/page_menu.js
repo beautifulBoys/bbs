@@ -3,20 +3,51 @@ require('./page_menu.less');
 
 import React from 'react';
 import { Breadcrumb } from 'antd';
-import { plate } from '../data/plate.json';
+import { brand, plate, plateSecond } from '../data/plate.json';
 
 export default class PageMenu extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      skin: 'style1',
+      tabActiveStyle1: 'list active',
+      tabActiveStyle2: 'square'
+
+    };
+  }
+  foldEvent (e) {
+    var arr = e.target.parentNode.children;
+    var child = e.target.children;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] !== e.target) {
+        if (!arr[i].getAttribute('class')) {
+          arr[i].setAttribute('class', 'fold');
+          child[0].setAttribute('class', 'hide');
+          child[1].setAttribute('class', '');
+        } else {
+          arr[i].setAttribute('class', '');
+          child[0].setAttribute('class', '');
+          child[1].setAttribute('class', 'hide');
+        }
+      }
+    }
+  }
+  openPlateEvent (item) {
+    alert(item);
+  }
+  styleClick (styleName) {
+    if (styleName === 'style1') this.setState({skin: styleName, tabActiveStyle1: 'list active', tabActiveStyle2: 'square'});
+    else this.setState({skin: styleName, tabActiveStyle1: 'list', tabActiveStyle2: 'square active'});
+  }
 
   render() {
-    var a = [{id: 1, name: '中国矿业大学', link: '#'}, {id: 2, name: '新能源工程学院'}, {id: 3, name: '信呢各院', link: '#'}, {id: 4, name: '版面列表'}];
-
     return (
       <div className="page-menu-body">
         <div className="main-content-box">
           <div className="bread">
             <Breadcrumb separator=">>">
             {
-              a.map((item) => {
+              brand.map((item) => {
                 if (item.link) {
                   return <Breadcrumb.Item key={item.id}><a href={item.link}>{item.name}</a></Breadcrumb.Item>
                 } else {
@@ -62,18 +93,58 @@ export default class PageMenu extends React.Component {
             </ul>
 
             <div className="default-plate-box">
-              <div className="style1">
+              <div className={this.state.skin}>
                 <div className="header">默认版面
-                  <div className="box"><span className="square active">区块</span><span className="list">列表</span></div>
+                  <div className="box">
+                    <span className={this.state.tabActiveStyle1} onClick={this.styleClick.bind(this, 'style1')}>列表</span>
+                    <span className={this.state.tabActiveStyle2} onClick={this.styleClick.bind(this, 'style2')}>区块</span>
+                  </div>
                 </div>
-                <div>
-                  <div className="square-title">政治理论类社团<span>▼</span><span>▲</span></div>
-                  <ul>
-                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
-                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
-                    <li>BBShelp BBS使用求助 6 人 版务： lOOO leimiaos alwaysmoving  最后更新：前天 11:50</li>
-                  </ul>
-                </div>
+                  {
+                    plateSecond.map((item, index) => {
+                      return (
+                        <div key={index} className="second-box">
+                          <div className="square-title" onClick={this.foldEvent}>{item.text}<span>▼</span><span className="hide">▲</span></div>
+                          <ul>
+                            {
+                              item.list.map((item1, index1) => {
+                                if (this.state.skin === 'style1')
+                                return (
+                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)}>
+                                    <span className="collect">☆</span>
+                                    <span className="english">{item1.english}</span>
+                                    <span className="chinese">{item1.chinese}</span>
+                                    <span className="english">{item1.count}人</span>
+                                    <div className="right">
+                                      <div className="text">版务： {item1.admin.map((item2, index2) => {return <span key={index2} className="a1">{item2.name}</span>})}</div>
+                                      <div className="text1">最后更新：前天 11:50</div>
+                                    </div>
+                                  </li>
+                                )
+                                else
+                                return (
+                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)}>
+                                    <div className="top">
+                                      <span className="collect">☆</span>
+                                      <span className="english">{item1.english}</span>
+                                      <span className="text1">最后更新：前天 11:50</span>
+                                    </div>
+                                    <div className="center">
+                                      <span className="chinese">{item1.chinese}</span>
+                                      <span className="english">{item1.count}人</span>
+                                    </div>
+                                    <div className="bottom">
+                                      <div className="text">版务： {item1.admin.map((item2, index2) => {return <span key={index2} className="a1">{item2.name}</span>})}</div>
+                                    </div>
+                                  </li>
+                                )
+                              })
+                            }
+                          </ul>
+                        </div>
+                      )
+                    })
+                  }
               </div>
             </div>
           </div>
