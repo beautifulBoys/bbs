@@ -12,7 +12,6 @@ export default class PageMenu extends React.Component {
       skin: 'style1',
       tabActiveStyle1: 'list active',
       tabActiveStyle2: 'square'
-
     };
   }
   foldEvent (e) {
@@ -38,6 +37,14 @@ export default class PageMenu extends React.Component {
   styleClick (styleName) {
     if (styleName === 'style1') this.setState({skin: styleName, tabActiveStyle1: 'list active', tabActiveStyle2: 'square'});
     else this.setState({skin: styleName, tabActiveStyle1: 'list', tabActiveStyle2: 'square active'});
+  }
+  borderStyle (index) {
+    var a = index % 4;
+    if (a === 0) return 'red';
+    else if (a === 1) return 'blue';
+    else if (a === 2) return 'yellow';
+    else if (a === 3) return 'green';
+    else return 'red';
   }
 
   render() {
@@ -110,24 +117,24 @@ export default class PageMenu extends React.Component {
                               item.list.map((item1, index1) => {
                                 if (this.state.skin === 'style1')
                                 return (
-                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)}>
+                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)} className={this.borderStyle.bind(this, index1)()}>
                                     <span className="collect">☆</span>
                                     <span className="english">{item1.english}</span>
                                     <span className="chinese">{item1.chinese}</span>
                                     <span className="english">{item1.count}人</span>
                                     <div className="right">
                                       <div className="text">版务： {item1.admin.map((item2, index2) => {return <span key={index2} className="a1">{item2.name}</span>})}</div>
-                                      <div className="text1">最后更新：前天 11:50</div>
+                                      <div className="text1">最后更新：{item1.lastUpdate}</div>
                                     </div>
                                   </li>
                                 )
                                 else
                                 return (
-                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)}>
+                                  <li key={index1} onClick={this.openPlateEvent.bind(this, item1)} className={this.borderStyle.bind(this, index1)()}>
                                     <div className="top">
                                       <span className="collect">☆</span>
                                       <span className="english">{item1.english}</span>
-                                      <span className="text1">最后更新：前天 11:50</span>
+                                      <span className="text1">最后更新：{item1.lastUpdate}</span>
                                     </div>
                                     <div className="center">
                                       <span className="chinese">{item1.chinese}</span>
