@@ -1,0 +1,110 @@
+.image-view-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1001;
+  &.hide {
+    display: none;
+  }
+
+  .view-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .img-box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      img {
+        max-width: 70%;
+        max-height: 70%;
+        border: 7px solid #fff;
+      }
+    }
+    @height: 60px;
+    .control-box {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: @height;
+        height: @height;
+        background: rgba(0,0,0,1) url(../images/close.svg) no-repeat center center;
+        background-size: 25px;
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: @height;
+        border-radius: 100%;
+        opacity: 0.5;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .down {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: @height;
+        height: @height;
+        background: rgba(0,0,0,1) url(../images/down.svg) no-repeat center center;
+        background-size: 35px;
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: @height;
+        border-radius: 100%;
+        opacity: 0.5;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .control {
+        height: @height + 20px;
+        width: 100%;
+        display: flex;
+        padding: 0 20px;
+        .side {
+          width: @height + 20px;
+          border-radius: 100%;
+          opacity: 0.5;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.8;
+          }
+          &.left {
+            background: rgba(0,0,0,0.8) url(../images/back.svg) no-repeat center center;
+            background-size: 30px;
+          }
+          &.right {
+            background: rgba(0,0,0,0.8) url(../images/forward.svg) no-repeat center center;
+            background-size: 35px;
+          }
+        }
+        .center {
+          flex: 1;
+        }
+
+      }
+    }
+  }
+}
