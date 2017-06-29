@@ -4,6 +4,7 @@ require('./footer.less');
 import React from 'react';
 
 export default class Footer extends React.Component {
+	
   render() {
     var links = [
       {id: 0, text: '常用网站', link: '#'},
