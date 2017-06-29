@@ -6,7 +6,7 @@ import React from 'react';
 import { Breadcrumb, Pagination, Table } from 'antd';
 import ImageView from '../components/image_view';
 
-import {list, bread, info} from '../data/page_detail.json';
+import {list, bread, info, imgList} from '../data/page_detail.json';
 
 export default class AppComponent extends React.Component {
 
@@ -53,7 +53,7 @@ export default class AppComponent extends React.Component {
               <p>版务:
                 {
                   info.admin.map((item) => {
-                    return <a href="#" key={item.id}> {item.name} </a> 
+                    return <a href="#" key={item.id}> {item.name} </a>
                   })
                 }
               </p>
@@ -61,7 +61,7 @@ export default class AppComponent extends React.Component {
 
             <Table dataSource={list} columns={columns} pagination={false} className="table"/>
             <Pagination showQuickJumper defaultCurrent={2} total={50} onChange={paginationEvent} className="pagination-box"/>
-            <ImageView/>
+            <ImageView imglist={imgList}/>
           </div>
         </div>
       </div>
