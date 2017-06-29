@@ -5,6 +5,8 @@ import React from 'react';
 import { Breadcrumb } from 'antd';
 import { brand, userInfo, person } from '../data/member.json';
 
+
+
 export default class Member extends React.Component {
   constructor () {
     super();
