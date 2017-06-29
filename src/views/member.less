@@ -30,13 +30,191 @@ html {
     }
 
     .content-body {
-      height: 1000px;
-      background: red;
       width: 100%;
+      margin-bottom: 40px;
+      border: 1px solid #eee;
+      border-top: 4px solid @red;
+      background: #fff;
       .userInfo {
         width: 100%;
-        height: 150px;
-        background: blue;
+        height: 170px;
+        display: flex;
+        padding: 20px 30px;
+        .left-item {
+          width: 130px;
+          height: 100%;
+          img {
+            height: 100%;
+            border-radius: 100%;
+          }
+        }
+        .right-item {
+          flex: 1;
+          height: 100%;
+          padding: 30px 0;
+          margin-left: 30px;
+          display: flex;
+          .left {
+            flex: 1;
+            .title {
+              line-height: 40px;
+              font-size: 20px;
+              color: #333;
+            }
+            .value {
+              color: #777;
+            }
+          }
+          .right {
+            width: 180px;
+            ul {
+              padding: 0;
+              margin: 0;
+              height: 100%;
+              li {
+                display: inline-block;
+                width: 50px;
+                line-height: 34px;
+                background: #999;
+                margin: 18px 5px;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                border-radius: 15px;
+                cursor: pointer;
+                &:hover {
+                  background: #777;
+                }
+              }
+            }
+          }
+        }
+      }
+      .tab {
+        width: 100%;
+        line-height: 40px;
+        border-bottom: 1px solid #eee;
+        padding: 0 40px;
+        ul {
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          margin-bottom: -1px;
+          .text {
+            width: 150px;
+            text-align: center;
+            font-size: 15px;
+            display: inline-block;
+            cursor: pointer;
+            &:hover {
+              color: @red;
+            }
+            &.active {
+              border-right: 1px solid #eee;
+              border-left: 1px solid #eee;
+              border-top: 4px solid @red;
+              border-bottom: 1px solid #fff;
+              font-weight: bold;
+              cursor: default;
+              color: #666;
+            }
+          }
+        }
+      }
+      .tab-content {
+        width: 100%;
+
+        .tab-item1 {
+          padding: 20px 30px;
+          .cell {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            .title {
+              line-height: 40px;
+              color: #333;
+              font-size: 16px;
+            }
+            table {
+              width: 100%;
+              tr {
+                width: 100%;
+                td {
+                  width: 33%;
+                  line-height: 25px;
+                }
+              }
+            }
+            pre {
+              width: 100%;
+              line-height: 25px;
+              color: #888;
+              font-size: 13px;
+              font-family: "微软雅黑";
+
+            }
+          }
+        }
+        .tab-item2 {
+          padding: 20px 30px;
+          ol {
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            li {
+              width: 210px;
+              height: 180px;
+              border: 1px solid #eee;
+              font-size: 0;
+              margin: 15px;
+              display: inline-block;
+              padding: 6px;
+              box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+              cursor: pointer;
+              &:hover {
+                background: rgb(186, 247, 241);
+                .suo {
+                  opacity: 0.8!important;
+                }
+              }
+              .title {
+                text-align: center;
+                line-height: 50px;
+                font-size: 15px;
+
+              }
+              .item {
+                width: 100%;
+                height: 126px;
+                overflow: hidden;
+                position: relative;
+                .suo {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(0,0,0,0.7) url(../images/member/suo.svg) no-repeat center center;
+                  background-size: 50px;
+                  opacity: 0;
+                  transition: opacity 1s;
+                }
+                img {
+                  width: 120%;
+                  margin-left: -10%;
+                  margin-top: -5%;
+                }
+              }
+            }
+          }
+        }
+        .tab-item3 {
+          padding: 20px 30px;
+        }
+        .hide {
+          display: none;
+        }
       }
     }
   }

@@ -15,5 +15,31 @@
       "id": 4,
       "name": "版面列表"
     }
-  ]
+  ],
+  "userInfo": {
+    "id": 12,
+    "loginStatus": true,
+    "englishName": "query",
+    "chinaName": "倾世华妃",
+    "gate": ""
+  },
+  "person": {
+    "base": {
+      "userName": "倾世华妃",
+      "sex": 1,
+      "constellation": "摩羯座"
+    },
+    "survey": {
+      "loginNum": 23453,
+      "postNum": 342,
+      "live": 485,
+      "score": 4.2,
+      "level": 5,
+      "ownContent": 12,
+      "lastLoginTime": "2017-06-26 15:46:35",
+      "lastLogoutTime": "2017-06-26 15:46:35",
+      "ip": "121.12.231.24"
+    },
+    "explain": "高冷妖狐：要不是你坐实了好人身份真想归了你。\n一目连：其实我很好奇，这个神是怎么坐实的= =\n高冷妖狐：大家都说然后我就信了（？？？）\n一目连：月神的长老是不是要让贤了= ="
+  }
 }
