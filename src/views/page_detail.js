@@ -9,6 +9,16 @@ import ImageView from '../components/image_view';
 import {list, bread, info, imgList} from '../data/page_detail.json';
 
 export default class AppComponent extends React.Component {
+  constructor () {
+    super();
+    this.state = {
+      tabIndex: 0
+    };
+  }
+
+  tabEvent (num) {
+    this.setState({tabIndex: num});
+  }
 
   render() {
     function paginationEvent () {}
@@ -57,6 +67,14 @@ export default class AppComponent extends React.Component {
                   })
                 }
               </p>
+            </div>
+
+            <div className="tab">
+              <ul>
+                <li className={this.state.tabIndex === 0 ? 'text active' : 'text'} onClick={this.tabEvent.bind(this, 0)}>帖子</li>
+                <li className={this.state.tabIndex === 1 ? 'text active' : 'text'} onClick={this.tabEvent.bind(this, 1)}>精华帖</li>
+                <li className={this.state.tabIndex === 2 ? 'text active' : 'text'} onClick={this.tabEvent.bind(this, 2)}>群组</li>
+              </ul>
             </div>
 
             <Table dataSource={list} columns={columns} pagination={false} className="table"/>

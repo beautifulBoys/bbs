@@ -59,7 +59,7 @@ export default class ImageView extends React.Component {
                 (() => {
                   var a = [];
                   for (let i = 0, j = this.state.list_length; i < j; i++) {
-                    a.push(<span className={this.state.list_active_index === i ? 'item active' : 'item'} onClick={this.pagationEvent.bind(this, i)}>{i + 1}</span>);
+                    a.push(<span className={this.state.list_active_index === i ? 'item active' : 'item'} key={i} onClick={this.pagationEvent.bind(this, i)}>{i + 1}</span>);
                   }
                   return a;
                 })()

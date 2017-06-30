@@ -6,10 +6,10 @@ import Post from '../components/post.js';
 import Reply from '../components/reply.js';
 
 import { Breadcrumb, Pagination } from 'antd';
+import { bread } from '../data/main.json';
 
 export default class AppComponent extends React.Component {
   render() {
-    var a = [{id: 1, name: '中国矿业大学', link: '#'}, {id: 2, name: '新能源工程学院'}, {id: 3, name: '信呢各院', link: '#'}, {id: 4, name: '张建英'}];
     function paginationEvent () {
     }
     return (
@@ -19,7 +19,7 @@ export default class AppComponent extends React.Component {
           <div className="bread">
             <Breadcrumb separator=">>">
             {
-              a.map((item) => {
+              bread.map((item) => {
                 if (item.link) {
                   return <Breadcrumb.Item key={item.id}><a href={item.link}>{item.name}</a></Breadcrumb.Item>
                 } else {
