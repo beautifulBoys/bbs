@@ -30,7 +30,7 @@ export default class Reply extends React.Component {
             </select>
             <div className="float-right">
             是否匿名：<input type="radio"/>
-            <button>发布</button>
+            <button>发布 (Ctrl+Enter)</button>
             </div>
           </div>
         </div>

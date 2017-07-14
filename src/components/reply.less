@@ -35,15 +35,22 @@
         color: #333;
         &:focus {
           border: 1px solid #8ed0ff;
+          box-shadow: 0 0 8px rgba(142,208,255,0.6);
         }
       }
       button {
-        width: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
         border: 1px solid #eee;
-        background: blue;
+        background: #108ee9;
         border-radius: 3px;
         color: #fff;
         outline: none;
+        margin: 0 20px;
+        cursor: pointer;
+        &:hover, &:active {
+          background: #077ed4;
+        }
       }
       .float-right {
         float: right;
@@ -58,8 +65,10 @@
       height: 270px;
       margin-top: 20px;
       padding: 15px;
+      resize: none;
       &:focus {
         border: 1px solid #8ed0ff;
+        box-shadow: 0 0 8px rgba(142,208,255,0.6);
       }
     }
   }
