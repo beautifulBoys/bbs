@@ -4,6 +4,8 @@ require('./header.less');
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Modal, Button } from 'antd';
+import Cookies from 'js-cookie';
+//var cookie = new Cookies();
 
 export default class Header extends React.Component {
   constructor () {
@@ -11,8 +13,8 @@ export default class Header extends React.Component {
     this.state = {
       loading: false,
       login_status: false,
-      username: '1',
-      password: '2'
+      username: '',
+      password: ''
 
     };
   }
@@ -22,8 +24,12 @@ export default class Header extends React.Component {
   handleOk () {
     this.setState({loading: true});
     console.log(this.state.username, this.state.password);
+    Cookies.remove('passport');
+    Cookies.remove('userId');
+    Cookies.set('user', {username: this.state.username, userId: 23434654}, { expires: 5 });
     setTimeout(() => {
       this.setState({loading: false});
+      console.log(JSON.parse(Cookies.get('user')));
     }, 2000);
   }
   handleCancel () {
